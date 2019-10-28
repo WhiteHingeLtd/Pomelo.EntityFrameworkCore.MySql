@@ -10,6 +10,9 @@
     <ConcurrentGarbageCollection>true</ConcurrentGarbageCollection>
     <ThreadPoolMinThreads>64</ThreadPoolMinThreads>
     <RootNamespace>Pomelo.EntityFrameworkCore.MySql.IntegrationTests</RootNamespace>
+    <Configurations>Debug;Release;PublishRelease</Configurations>
+    <Platforms>AnyCPU</Platforms>
+    <AssemblyOriginatorKeyFile>Snek.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -55,7 +58,9 @@
 
   <ItemGroup>
     <AppConfig Include="appsettings.json" />
-    <AppConfig Include="config.json" />
+    <AppConfig Include="config.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AppConfig>
   </ItemGroup>
 
   <Target Name="CopyDirsAfterBuild" AfterTargets="Build">

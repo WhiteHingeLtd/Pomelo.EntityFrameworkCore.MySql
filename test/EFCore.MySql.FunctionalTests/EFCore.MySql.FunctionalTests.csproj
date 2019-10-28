@@ -5,6 +5,10 @@
     <AssemblyName>Pomelo.EntityFrameworkCore.MySql.FunctionalTests</AssemblyName>
     <RootNamespace>Pomelo.EntityFrameworkCore.MySql.FunctionalTests</RootNamespace>
     <DefaultItemExcludes>$(DefaultItemExcludes);*.trx</DefaultItemExcludes>
+    <Configurations>Debug;Release;PublishRelease</Configurations>
+    <Platforms>AnyCPU</Platforms>
+    <AssemblyOriginatorKeyFile>Snek.snk</AssemblyOriginatorKeyFile>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
 
   <ItemGroup>
@@ -59,6 +63,12 @@
     <None Update="config.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <AppConfig Include="config.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AppConfig>
   </ItemGroup>
 
 </Project>

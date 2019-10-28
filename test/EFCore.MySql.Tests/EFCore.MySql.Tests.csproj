@@ -6,6 +6,10 @@
     <AssemblyName>Pomelo.EntityFrameworkCore.MySql.Tests</AssemblyName>
     <RootNamespace>Pomelo.EntityFrameworkCore.MySql</RootNamespace>
     <DefaultItemExcludes>$(DefaultItemExcludes);*.trx</DefaultItemExcludes>
+    <Configurations>Debug;Release;PublishRelease</Configurations>
+    <Platforms>AnyCPU</Platforms>
+    <AssemblyOriginatorKeyFile>Snek.snk</AssemblyOriginatorKeyFile>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
 
   <ItemGroup>

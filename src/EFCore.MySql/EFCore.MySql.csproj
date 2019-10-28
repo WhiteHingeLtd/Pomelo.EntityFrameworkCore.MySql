@@ -8,6 +8,10 @@
     <RootNamespace>Pomelo.EntityFrameworkCore.MySql</RootNamespace>
     <IsPackable>true</IsPackable>
     <DeterministicSourcePaths>false</DeterministicSourcePaths>
+    <Configurations>Debug;Release;PublishRelease</Configurations>
+    <Platforms>AnyCPU</Platforms>
+    <AssemblyOriginatorKeyFile>Snek.snk</AssemblyOriginatorKeyFile>
+    <PackageVersion>3.0.0-alphaWH</PackageVersion>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -15,7 +19,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Pomelo.JsonObject" Version="$(PomeloJsonObjectVersion)" />
+    <PackageReference Include="Pomelo.JsonObject" Version="2.2.1-WhiteHinge" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(LocalEFCoreRepository)' == ''">

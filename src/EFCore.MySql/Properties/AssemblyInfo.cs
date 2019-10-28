@@ -6,4 +6,4 @@ using System.Runtime.CompilerServices;
 using Microsoft.EntityFrameworkCore.Design;
 
 [assembly: DesignTimeProviderServices("Pomelo.EntityFrameworkCore.MySql.Design.Internal.MySqlDesignTimeServices")]
-[assembly: InternalsVisibleTo("Pomelo.EntityFrameworkCore.Tests")]
+//[assembly: InternalsVisibleTo("Pomelo.EntityFrameworkCore.Tests")]
